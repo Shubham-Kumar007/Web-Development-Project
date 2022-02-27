@@ -1,0 +1,304 @@
+body{
+	font-family: 'Poppins', sans-serif;
+}
+.navbar .nav-link{
+	font-size: 15px;
+	color: #000!important;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+.navbar-brand{
+	height: 25px;
+	padding-left: 15px;
+}
+.navbar-brand img{
+	position: absolute;
+	width: 60px;
+	height: 60px;margin-top: -20px;
+}
+.navbar-toggler{
+	outline: none !important;
+
+}
+
+.bg-black{
+	background: linear-gradient(lightslategray,#fff);
+}
+.searchform{
+	height: 50px;
+	background: rgba(0,0,0,0.7);
+	overflow: hidden;
+	border-radius: 40px;
+}
+@media(min-width: 992px){
+	.searchform{
+		width: 300px;
+		padding-bottom: 10px;
+	}
+}
+.searchform .form-control{
+	width:  calc(100% - 50px);
+	border: none;
+	border-radius: 0;
+	background: rgba(0,0,0,0.4) !important;
+	color: #ffff!important;
+	font-size: 14px;
+}
+.searchform .search{
+	width: 50px;
+	height: 50px;
+	background: var(--mainColor)!important;
+}
+.searchform .search span{
+	font-size: 16px;
+	color: #000 !important;
+}
+
+
+
+/*----------slider--------*/
+
+.carousel-item{
+	height: 600px;
+}
+
+.carousel-img{
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+.title-color{
+	color: #000;
+	font-weight: 300!important;
+
+}
+
+
+.carousel-caption p{
+	position: relative!important;
+    color: #000;
+    font-size: 20px;
+    
+}
+
+.btn-color{
+    background-color: black !important;
+    color: lightslategrey !important;
+}
+.btn-color:hover{
+    color: #fff !important;
+}
+@keyframes slide-btn{
+	16.65%{
+         transform: translateY(9px);
+	}
+	35%{
+		transform: translateY(-7px);
+	}
+	52%{
+		transform: translateY(4px);
+	}
+	65%{
+		transform: translateY(-3px);
+	}
+	85%{
+		transform: translateY(2px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+.slide-btn{
+	display: inline-block;
+	vertical-align: middle;
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0,0,0,0.1);
+}
+.slide-btn:hover,
+.slide-btn:focus,
+.slide-btn:active{
+	animation-name: slide-btn;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+}
+.arrow span{
+    font-size: 34px;
+    font-weight: 400;
+    color: darkslategray;
+    transition: 0.1s;
+}
+@media only screen and (max-width:991px){
+
+	.carousel-caption h2{
+		font-size: 55px;
+		font-weight: 600;
+	}
+	.carousel-caption p{
+        font-size: 25px;
+        font-weight: 400;
+	}
+}
+@media only screen and (max-width:767px){
+	.carousel-caption h2{
+		font-size: 35px;
+		text-align: center;
+	}
+	.carousel-caption p{
+        font-size: 25px;
+	}
+}
+@media only screen and (max-width:575px){
+	.carousel-caption h2{
+		font-size: 30px;
+		text-align: center;
+	}
+	.carousel-caption p{
+		font-size: 20px;
+		text-align: center;
+	}
+}
+.contact_me{
+	height: 100%;
+	background: #575454;
+	color: #fff;
+}
+.contact_cont{
+	background-color: #696868;
+}
+.heading{
+	padding-top: 50px;
+	text-align: center;
+	font-size: 45px;
+	border-bottom: 2px dotted #000;
+
+}
+.firstline{
+	text-align: center;
+
+}
+.btn-info{
+	width: 35%;
+    letter-spacing: 2px;
+    background: transparent!important;
+    transition: all 0.5s ease-in-out;
+}
+.btn-info:hover{
+	background: lightskyblue!important;
+}
+.local{
+	font-size: 17px;
+	letter-spacing: 1px;
+}
+.local .fa{
+	padding-right: 10px;
+    font-size: 20px;
+}
+hr{
+	width: 80%;
+	color: #fff!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------Follow us--------------*/
+.follow{
+	margin: 15px 0;
+	text-align: center;
+}
+.follow h2{
+	margin-top: -20px;
+	margin-bottom: 20px;
+	padding-top: 30px;
+	position: relative;
+}
+.follow h2::before{
+	content: '';
+	display: block;
+	width: 100px;
+	height: 2px;
+	position: absolute;
+	background: #000;
+	left: 32%;
+	top: 75%;
+}
+.follow h2::after{
+	content: '';
+	display: block;
+	width: 100px;
+	height: 2px;
+	position: absolute;
+	background: #000;
+	right: 32%;
+	top: 75%;
+}
+.follow .img2{
+	font-size: 18px;
+	font-weight: bold;
+}
+.follow i{
+	font-size: 35px;
+	padding-right: 3px;
+
+}
+
+
+
+
+/*-------------footer----------*/
+
+.footer{
+	background: black!important;
+	color: #fff;
+	margin-top: 60px;
+}
+.footer img{
+	width: 150px;
+}
+.footer .fa{
+	height: 25px;
+	width: 25px;
+}
+.footer h1{
+	font-size: 23px;
+	margin: 25px 0;
+
+}
+.footer p{
+	font-size: 14px;
+}
+.play-img{
+	padding-bottom: 10px;
+}
+.copyright{
+	margin-bottom: -60px;
+	text-align: center;
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+.fa-heart-o{
+	color: red;
+	font-size: 17px;
+}
+.footer hr{
+	margin-top: 10px;
+	background-color: #fff;
+}
+.footer .row .fa{
+	padding-right: 5px;
+}
